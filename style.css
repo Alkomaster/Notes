@@ -47,11 +47,24 @@ body {
   resize: none;
   border: none;
 }
+@media (max-width: 600px) {
+  .note__body {
+    width: 246.01px;
+    height: 250px;
+  }
+}
 .note__edit {
   background-image: url("img/edit.png");
 }
 .note__delete {
   background-image: url("img/trash-icon.png");
+}
+@media (max-width: 600px) {
+  .note {
+    width: 250px;
+    height: 250px;
+    margin: 50px auto 0px auto;
+  }
 }
 
 .main {

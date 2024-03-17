@@ -20,7 +20,7 @@ function addNote(text = ''){
     const textArea = note.querySelector('.note__body')
     const main = note.querySelector('.main')
     const editBtn = note.querySelector('.note__edit')
-    
+
 
     textArea.innerHTML = text;
     main.innerHTML = text;
@@ -47,12 +47,14 @@ function addNote(text = ''){
     })
     document.body.appendChild(note)
 
+    lsUpdate()
 
 }
 
 
 function lsUpdate(){
     const notesText = document.querySelectorAll('textarea')
+    console.log(notesText)
     const notes = []
     notesText.forEach(note => notes.push(note.value))
     localStorage.setItem('notes', JSON.stringify(notes))

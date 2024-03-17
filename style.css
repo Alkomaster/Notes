@@ -1,0 +1,64 @@
+body {
+  background-color: #7bdaf3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #9ec862;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.note {
+  margin: 30px 20px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+}
+.note__head {
+  background-color: #9ec862;
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: end;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.note button {
+  background-color: #9ec862;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.note__body {
+  width: 396px;
+  height: 400px;
+  resize: none;
+  border: none;
+}
+.note__edit {
+  background-image: url("img/edit.png");
+}
+.note__delete {
+  background-image: url("img/trash-icon.png");
+}
+
+.main {
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
